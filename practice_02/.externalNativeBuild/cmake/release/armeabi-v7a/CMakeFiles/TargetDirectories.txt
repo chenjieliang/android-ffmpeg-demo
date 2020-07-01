@@ -1,0 +1,3 @@
+/home/zhengyuanlong/jieliang/projects/my/demo/practice-ffmpeg/practice_02/.externalNativeBuild/cmake/release/armeabi-v7a/CMakeFiles/rebuild_cache.dir
+/home/zhengyuanlong/jieliang/projects/my/demo/practice-ffmpeg/practice_02/.externalNativeBuild/cmake/release/armeabi-v7a/CMakeFiles/edit_cache.dir
+/home/zhengyuanlong/jieliang/projects/my/demo/practice-ffmpeg/practice_02/.externalNativeBuild/cmake/release/armeabi-v7a/CMakeFiles/native-lib.dir

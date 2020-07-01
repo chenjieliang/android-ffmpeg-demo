@@ -1,0 +1,51 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    
+    repositories {
+        google()
+        jcenter()
+        maven {
+            credentials {
+                username project.hasProperty('nexus.user') ? project.property('nexus.user') : System.getenv('NEXUS_USER')
+                password project.hasProperty('nexus.password') ? project.property('nexus.password') : System.getenv('NEXUS_PASSWORD')
+            }
+            url 'http://192.168.60.200:8081/repository/maven-public/'
+
+        }
+
+        maven {
+            url 'https://jitpack.io'
+        }
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.1.2'
+        
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        maven {
+            credentials {
+                username project.hasProperty('nexus.user') ? project.property('nexus.user') : System.getenv('NEXUS_USER')
+                password project.hasProperty('nexus.password') ? project.property('nexus.password') : System.getenv('NEXUS_PASSWORD')
+            }
+            url 'http://192.168.60.200:8081/repository/maven-public/'
+
+        }
+
+        maven {
+            url 'https://jitpack.io'
+        }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
