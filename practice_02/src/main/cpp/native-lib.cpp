@@ -1,6 +1,3 @@
-//
-// Created by 叶亮 on 2019/1/2.
-//
 #include <jni.h>
 #include <string>
 #include <android/log.h>
